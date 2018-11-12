@@ -1,0 +1,9 @@
+FILE(GLOB_RECURSE ALL_TEST_CPP *.cpp)
+ADD_EXECUTABLE(test
+  ${ALL_TEST_CPP}
+)
+TARGET_LINK_LIBRARIES(test
+  lib
+  ${DEPS}
+  gtest
+)
